@@ -1,0 +1,88 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root {
+    --cor01: #000;
+    --cor02: #ffff;
+    --cor03: rgba(0, 0, 0, 0.267);
+
+    --fonte-padrão: 'Sriracha', 'Segoe print', Tahoma, sans-serif;
+    --fonte-título: 'Passion One', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    --fonte-subtítulo: Verdana, Arial, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor02);
+}
+a:hover {
+    text-decoration: underline;
+}
+header {
+    font-family: var(--fonte-padrão);
+    background-color: var(--cor01);
+    color: var(--cor02);
+    text-align: center;    
+}
+header > h1 {
+    font-size: 10vh;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte-título);
+}
+header > p {
+    padding-bottom: 50px;
+    font-family: var(--fonte-subtítulo);    
+}
+body {
+    min-width: 100vh;
+    background-color:var(--cor02);
+    font-family: var(--fonte-padrão);
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-padrão);
+    font-size: 3.5vh;
+}
+section.p {
+    padding-bottom: 2em;    
+}
+section.normal {
+    background-color: var(--cor02);
+    color: var(--cor01);
+}
+section.imagem {
+    color: var(--cor02);    
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+section.imagem > p {
+    background-color: var(--cor03);
+    text-shadow:rgba(0, 0, 0, 0.534) 1px 1px 2px;
+    display: inline-block;
+    padding: 5px;
+}
+section#img01 {
+    background: white url(../imagens/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
+}
+section#img02 {
+    background: white url(../imagens/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+footer {
+    font-family: var(--fonte-subtítulo);
+    font-size: 12px;
+    background-color: var(--cor01);
+    color: var(--cor02);
+    text-align: center;
+    padding: 10px;
+}
